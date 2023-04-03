@@ -1,6 +1,7 @@
 // Generates a random password based on inputs
 function generatePassword() {
   // Determines the password length and errors if it is outside the scope
+  var password = "";
   var passwordLength = parseInt(prompt("Enter a password length between 8 and 128 characters."))
   if (passwordLength < 8 || passwordLength > 128) {
       alert("Error: Password must be between 8 and 128 characters in length.")
@@ -11,18 +12,31 @@ function generatePassword() {
   var uppercase = confirm("Use uppercase letters?")
   var numeric = confirm("Use numeric characters?")
   var special = confirm("Use special characters?")
+  // Returns an error if no parameters are checked
+  if (lowercase == false &&
+      uppercase == false &&
+      numeric == false &&
+      special == false) {
+        alert("Error: You must choose at least one parameter.")
+        return "Error: Please try again";
+      }
   //Finds characters for each position in length
-  for (var i = 0; i <= passwordLength; i++) {
+  for (var i = 0; i < passwordLength; i++) {
     var charType = Math.floor(4 * Math.random());
-    if (lowercase) {
-      console.log(randomLowercase);
-    }
-    if (uppercase) {
-
+    if (lowercase && charType == 0) {
+      password = password + randomLowercase();
+    } else if (uppercase && charType == 1) {
+      password = password + randomUppercase();
+    } else if (numeric && charType == 2) {
+      password = password + randomNumeric();
+    } else if (special && charType == 3) {
+      password = password + randomSpecial();
+    } else {
+      i--;
     }
 
   }
-
+  return password;
 }
 // Chooses a random lowercase letter
 function randomLowercase() {
