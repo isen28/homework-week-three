@@ -53,7 +53,7 @@ function generatePassword() {
       i--;
     }
 
-  }
+  }gi
   return password;
 }
 // Chooses a random lowercase letter
