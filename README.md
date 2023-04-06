@@ -14,7 +14,7 @@ Input the requested parameters.
 
 ## Screenshot
 
-![]([https://isen28.github.io/homework-week-three/W3Screenshot.png)
+![Screenshot]([https://isen28.github.io/homework-week-three/W3Screenshot.png)
 
 ## Credits
 
