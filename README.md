@@ -14,7 +14,7 @@ Input the requested parameters.
 
 ## Screenshot
 
-![alt text]([https://isen28.github.io/homework-week-three/W3Screenshot.jpg?raw=true)
+![]([https://isen28.github.io/homework-week-three/W3Screenshot.jpg)
 
 ## Credits
 
