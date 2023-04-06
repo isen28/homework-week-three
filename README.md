@@ -14,7 +14,7 @@ Input the requested parameters.
 
 ## Screenshot
 
-![Screenshot of the page.](/W3Screenshot.png)
+![Screenshot of the page.](/W3Screenshot.PNG)
 
 ## Credits
 
